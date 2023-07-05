@@ -3,7 +3,7 @@
  * It types an array of texts in a random order. I like random stuff🙃
  */
 function typingEffect() {
-    const contactTexts = shuffleArray(['arrString', 'arrString1', 'arrString2', 'arrString3', 'arrString4']);
+    const contactTexts = shuffleArray(['arr', 'arr1', 'arr2', 'arr3',]);
     const ngetik = document.getElementsByClassName("ngetik")[0];
     let removing = false;
     let idx = char = 0;
