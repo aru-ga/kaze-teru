@@ -3,26 +3,26 @@
  * It types an array of texts in a random order. I like random stuff🙃
  */
 function typingEffect() {
-    const contactTexts = shuffleArray(['Want to tell me something?😊', 'Ask me anything!😄', 'Want to talk about an idea?', 'Lets do something together!🤗', 'Do you need help in something?👍']);
-    const typedtext = document.getElementsByClassName("typedtext")[0];
+    const contactTexts = shuffleArray(['arrString', 'arrString1', 'arrString2', 'arrString3', 'arrString4']);
+    const ngetik = document.getElementsByClassName("ngetik")[0];
     let removing = false;
     let idx = char = 0;
 
     setInterval(() => { // We define the interval of the typing speed
 
         // If we do not reach the limit, we insert characters in the html
-        if (char < contactTexts[idx].length) typedtext.innerHTML += contactTexts[idx][char];
+        if (char < contactTexts[idx].length) ngetik.innerHTML += contactTexts[idx][char];
 
         // 15*150ms = time before starting to remove characters
         if (char == contactTexts[idx].length + 15) removing = true;
 
         // Removing characters, the last one always
-        if (removing) typedtext.innerHTML = typedtext.innerHTML.substring(0, typedtext.innerHTML.length - 1);
+        if (removing) ngetik.innerHTML = ngetik.innerHTML.substring(0, ngetik.innerHTML.length - 1);
 
         char++; // Next character
 
         // When there is nothing else to remove
-        if (typedtext.innerHTML.length === 0) {
+        if (ngetik.innerHTML.length === 0) {
 
             // If we get to the end of the texts we start over
             if (idx === contactTexts.length - 1) idx = 0
@@ -32,7 +32,7 @@ function typingEffect() {
             removing = false; // No more removing characters
         }
 
-    }, 15); // Typing speed, 150 ms
+    }, 150); // Typing speed, 150 ms
 
 }
 typingEffect();

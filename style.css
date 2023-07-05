@@ -12,19 +12,16 @@
   justify-content: center;
   text-align: center;
 }
-.typedtext {
-  margin-top: 20%;
-  border-right: 2px solid black;
+.ngetik {
+  border-right: 2px solid #f1f1f1;
   animation: blinkTextCursor 800ms steps(44) infinite normal;
-  height: 40px;
-  margin-bottom: 55px;
-  color: #000;
+  color: #f5f5f5;
   display: block;
 }
 
 @keyframes blinkTextCursor {
   from {
-    border-right-color: black;
+    border-right-color: #f1f1f1;
   }
   to {
     border-right-color: transparent;
