@@ -32,7 +32,7 @@ function typingEffect() {
             removing = false; // No more removing characters
         }
 
-    }, 150); // Typing speed, 150 ms
+    }, 10); // Typing speed, 150 ms
 
 }
 typingEffect();
