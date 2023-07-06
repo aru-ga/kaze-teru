@@ -2522,8 +2522,34 @@ video {
 }
 
 @media (min-width: 640px){
+  .sm\:invisible{
+    visibility: hidden;
+  }
+
+  .sm\:flex{
+    display: flex;
+  }
+
+  .sm\:hidden{
+    display: none;
+  }
+
   .sm\:underline{
     text-decoration-line: underline;
+  }
+}
+
+@media (min-width: 768px){
+  .md\:invisible{
+    visibility: hidden;
+  }
+
+  .md\:flex{
+    display: flex;
+  }
+
+  .md\:hidden{
+    display: none;
   }
 }
 
