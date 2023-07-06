@@ -35,3 +35,20 @@
   border-radius: 0%;
 
 }
+.gradient-heading {
+  background: linear-gradient(45deg, #ff7f00, #ff3e00, #ff007f, #911691, #8000ff, #00ffff, #00ff00, #ffff00);
+  background-size: 800% 800%;
+  -webkit-animation: gradientAnimation 5s ease infinite;
+  -moz-animation: gradientAnimation 5s ease infinite;
+  animation: gradientAnimation 5s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-bottom: 2em;
+  line-height: 1;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
