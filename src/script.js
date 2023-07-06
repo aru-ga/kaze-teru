@@ -55,3 +55,19 @@ function shuffleArray(array) {
 
     return array;
 }
+
+window.addEventListener('scroll', () => {
+    const navbar = document.getElementById('navbar');
+    const content = document.getElementById('hero');
+    const contentOffsetTop = content.offsetTop;
+    const navbarHeight = navbar.offsetHeight;
+    const scrollTop = window.scrollY.offsetHeight || document.documentElement.scrollTop;
+  
+    if (scrollTop > contentOffsetTop) {
+      navbar.classList.add('sticky');
+      content.style.marginTop = `${navbarHeight}px`;
+    } else {
+      navbar.classList.remove('sticky');
+    }
+  });
+  
