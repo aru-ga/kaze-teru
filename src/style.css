@@ -3,10 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-*{
-  color: #f1f1f1;
-}
 .ngetik {
   border-right: 2px solid #f1f1f1;
   animation: blinkTextCursor 800ms steps(44) infinite normal;
@@ -26,13 +22,14 @@
 #navbar {
   position: fixed;
   height: 50px;
-  transition: 50 ease-in-out;
+  transition: 200ms ease-in-out;
 }
 
 #navbar.sticky {
   margin-top: 0;
   width: 100%;
   border-radius: 0%;
+
 }
 .gradient-heading {
   background: linear-gradient(45deg, #ff7f00, #ff3e00, #ff007f, #911691, #8000ff, #00ffff, #00ff00, #ffff00);
