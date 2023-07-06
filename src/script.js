@@ -65,9 +65,11 @@ window.addEventListener('scroll', () => {
   
     if (scrollTop > contentOffsetTop) {
       navbar.classList.add('sticky');
+      navbar.classList.add('bg-slate-900');
       content.style.marginTop = `${navbarHeight}px`;
     } else {
       navbar.classList.remove('sticky');
+      navbar.classList.remove('bg-slate-900');
     }
   });
   

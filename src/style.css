@@ -26,14 +26,13 @@
 #navbar {
   position: fixed;
   height: 50px;
-  transition: .5s ease-in-out;
+  transition: 50 ease-in-out;
 }
 
 #navbar.sticky {
   margin-top: 0;
   width: 100%;
   border-radius: 0%;
-
 }
 .gradient-heading {
   background: linear-gradient(45deg, #ff7f00, #ff3e00, #ff007f, #911691, #8000ff, #00ffff, #00ff00, #ffff00);
@@ -52,3 +51,8 @@
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
+
+.glowing-text {
+  text-shadow: 0 0 5px rgb(34 211 238);
+}
+
