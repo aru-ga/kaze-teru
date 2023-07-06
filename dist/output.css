@@ -674,6 +674,16 @@ video {
   margin-right: 2.5rem;
 }
 
+.mx-5{
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
+.mx-56{
+  margin-left: 14rem;
+  margin-right: 14rem;
+}
+
 .mb-10{
   margin-bottom: 2.5rem;
 }
@@ -692,6 +702,10 @@ video {
 
 .mt-5{
   margin-top: 1.25rem;
+}
+
+.mr-3{
+  margin-right: 0.75rem;
 }
 
 .box-border{
@@ -805,6 +819,22 @@ video {
   height: 100vh;
 }
 
+.h-2{
+  height: 0.5rem;
+}
+
+.h-5{
+  height: 1.25rem;
+}
+
+.h-6{
+  height: 1.5rem;
+}
+
+.h-9{
+  height: 2.25rem;
+}
+
 .w-11\/12{
   width: 91.666667%;
 }
@@ -819,6 +849,14 @@ video {
 
 .w-9{
   width: 2.25rem;
+}
+
+.w-5{
+  width: 1.25rem;
+}
+
+.w-7{
+  width: 1.75rem;
 }
 
 .flex-shrink{
@@ -1999,6 +2037,11 @@ video {
   line-height: 1.75rem;
 }
 
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .font-bold{
   font-weight: 700;
 }
@@ -2554,6 +2597,21 @@ video {
     display: flex;
   }
 
+  .sm\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .sm\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .sm\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .sm\:underline{
     text-decoration-line: underline;
   }
@@ -2562,6 +2620,26 @@ video {
 @media (min-width: 768px){
   .md\:flex{
     display: flex;
+  }
+
+  .md\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .md\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .md\:text-6xl{
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .md\:text-9xl{
+    font-size: 8rem;
+    line-height: 1;
   }
 }
 
