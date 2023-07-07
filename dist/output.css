@@ -2801,10 +2801,6 @@ video {
   border-radius: 6px;
 }
 
-.timeline-component {
-  margin: 0px 20px 20px 20px;
-}
-
 @media screen and (min-width: 768px) {
   .timeline {
     display: grid;
