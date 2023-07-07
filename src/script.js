@@ -32,7 +32,7 @@ function typingEffect() {
             removing = false; // No more removing characters
         }
 
-    }, 10); // Typing speed, 150 ms
+    }, 150); // Typing speed, 150 ms
 
 }
 typingEffect();
@@ -66,6 +66,8 @@ window.addEventListener('scroll', () => {
     if (scrollTop > contentOffsetTop) {
       navbar.classList.add('sticky');
       navbar.classList.add('bg-slate-900');
+      navbar.classList.add('border-b-4');
+      navbar.classList.add('border-cyan-400');
       content.style.marginTop = `${navbarHeight}px`;
     } else {
       navbar.classList.remove('sticky');
