@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/main.css">
     <link href="/dist/output.css" rel="stylesheet">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');</style>
 </head>
 <body class="bg-slate-950">
     <header class="flex justify-center">
@@ -37,7 +38,7 @@
         
         <section id="about">
             <div class="flex flex-col justify-center items-center h-80 text-center font-bold font-sans">
-                <h1 class="gradient-heading text-xl w-4/6 md:text-5xl sm:text-3xl ">"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam, amet?"</h1>
+                <h1 class="gradient-heading text-3xl w-4/6 md:text-5xl sm:text-3xl ">"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam, amet?"</h1>
             </div>
         </section>
 
@@ -46,12 +47,54 @@
             <h1 class="">Timeline</h1>
             <hr class="w-20 bg-cyan-400 h-1 border-opacity-0 mb-10">
           </div>
-          <ul class="list-disc list-outside mx-56">
-            <li>5 cups chopped Porcini mushrooms</li>
-            <li>5 cups chopped Porcini mushrooms</li>
-            <li>5 cups chopped Porcini mushrooms</li>
-            <li>5 cups chopped Porcini mushrooms</li>
-          </ul>          
+          <div class="nodeline flex justify-around ">
+            
+
+<!--This is the main container that contains the whole timeline.-->
+        <div class="design-section">
+          <div class="timeline">
+                                                              <!--This space is technically used for keeping dates, provide you the styling for dates-->
+            <div class="timeline-empty">
+              <h3>2020</h3>
+            </div>
+                                <!--This is the class where the timeline graphics are used in. Note that we have timeline-circle here for that pointer in timeline.-->
+            <div class="timeline-middle">
+              <div class="timeline-circle"></div>
+            </div>
+
+            <div class="timeline-component timeline-content">
+              <h3>HTML</h3>
+              <p>Some Text</p>
+            </div>
+
+            <div class="timeline-component timeline-content">
+              <h3>CSS</h3>
+              <p>Some Text.</p>
+            </div>
+
+            <div class="timeline-middle">
+              <div class="timeline-circle"></div>
+            </div>
+
+            <div class="timeline-empty">
+                  
+            </div>
+            <div class="timeline-empty">
+
+            </div>
+
+            <div class="timeline-middle">
+              <div class="timeline-circle"></div>
+            </div>
+            
+            <div class=" timeline-component timeline-content">
+              <h3>Javascript</h3>
+              <p>Some Text.</p>
+            </div>
+          </div>
+        </div> 
+</section>
+          </div>
         </section>
 
         <section id="cert">

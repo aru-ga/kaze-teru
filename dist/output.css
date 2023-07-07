@@ -674,22 +674,16 @@ video {
   margin-right: 2.5rem;
 }
 
-.mx-5{
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
-}
-
-.mx-56{
-  margin-left: 14rem;
-  margin-right: 14rem;
-}
-
 .mb-10{
   margin-bottom: 2.5rem;
 }
 
 .ml-3{
   margin-left: 0.75rem;
+}
+
+.mr-3{
+  margin-right: 0.75rem;
 }
 
 .mr-5{
@@ -702,10 +696,6 @@ video {
 
 .mt-5{
   margin-top: 1.25rem;
-}
-
-.mr-3{
-  margin-right: 0.75rem;
 }
 
 .box-border{
@@ -815,24 +805,12 @@ video {
   height: 20rem;
 }
 
-.h-screen{
-  height: 100vh;
-}
-
-.h-2{
-  height: 0.5rem;
-}
-
-.h-5{
-  height: 1.25rem;
-}
-
-.h-6{
-  height: 1.5rem;
-}
-
 .h-9{
   height: 2.25rem;
+}
+
+.h-screen{
+  height: 100vh;
 }
 
 .w-11\/12{
@@ -845,18 +823,6 @@ video {
 
 .w-4\/6{
   width: 66.666667%;
-}
-
-.w-9{
-  width: 2.25rem;
-}
-
-.w-5{
-  width: 1.25rem;
-}
-
-.w-7{
-  width: 1.75rem;
 }
 
 .flex-shrink{
@@ -1060,10 +1026,6 @@ video {
 
 .list-outside{
   list-style-position: outside;
-}
-
-.list-disc{
-  list-style-type: disc;
 }
 
 .appearance-none{
@@ -2022,24 +1984,14 @@ video {
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-.text-5xl{
-  font-size: 3rem;
-  line-height: 1;
-}
-
-.text-6xl{
-  font-size: 3.75rem;
-  line-height: 1;
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-3xl{
-  font-size: 1.875rem;
-  line-height: 2.25rem;
 }
 
 .font-bold{
@@ -2139,11 +2091,6 @@ video {
 .text-slate-100{
   --tw-text-opacity: 1;
   color: rgb(241 245 249 / var(--tw-text-opacity));
-}
-
-.text-slate-800{
-  --tw-text-opacity: 1;
-  color: rgb(30 41 59 / var(--tw-text-opacity));
 }
 
 .underline{
@@ -2520,6 +2467,75 @@ video {
   text-shadow: 0 0 5px rgb(34 211 238);
 }
 
+.design-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 100px 0;
+  font-family: Jost;
+}
+
+.design {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline {
+  width: 80%;
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline-content {
+  padding: 20px;
+  color: white;
+  padding: 1.75rem;
+  transition: 0.4s ease;
+  overflow-wrap: break-word !important;
+  margin: 1rem;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+.timeline-component {
+  margin: 0px 20px 20px 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .timeline {
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+  }
+
+  .timeline-middle {
+    position: relative;
+    background-color: #f1f1f1;
+    width: 3px;
+    height: 100%;
+  }
+
+  .main-middle {
+    opacity: 0;
+  }
+
+  .timeline-circle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    transform: translateX(-50%);
+  }
+}
+
 @media (min-width: 640px){
   .sm\:container{
     width: 100%;
@@ -2597,19 +2613,14 @@ video {
     display: flex;
   }
 
-  .sm\:text-xl{
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+  .sm\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .sm\:text-5xl{
     font-size: 3rem;
     line-height: 1;
-  }
-
-  .sm\:text-3xl{
-    font-size: 1.875rem;
-    line-height: 2.25rem;
   }
 
   .sm\:underline{
@@ -2622,23 +2633,8 @@ video {
     display: flex;
   }
 
-  .md\:text-xl{
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
   .md\:text-5xl{
     font-size: 3rem;
-    line-height: 1;
-  }
-
-  .md\:text-6xl{
-    font-size: 3.75rem;
-    line-height: 1;
-  }
-
-  .md\:text-9xl{
-    font-size: 8rem;
     line-height: 1;
   }
 }
@@ -2648,4 +2644,3 @@ video {
     paint-order: markers;
   }
 }
-
