@@ -74,5 +74,3 @@ window.addEventListener('scroll', () => {
       navbar.classList.remove('mx-16');
     }
   });
-  
-  
