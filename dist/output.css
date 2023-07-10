@@ -2787,7 +2787,7 @@ video {
 
 .timeline {
   display: grid;
-  grid-template-columns: 1fr 3px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .timeline-content {
@@ -2800,11 +2800,6 @@ video {
   border-radius: 6px;
 }
 
-.timeline {
-  display: grid;
-  grid-template-columns: 1fr 3px 1fr;
-}
-
 .timeline-middle {
   position: relative;
   background-color: #f1f1f1;
@@ -2813,7 +2808,7 @@ video {
 }
 
 .main-middle {
-  opacity: 1;
+  opacity: 0;
 }
 
 .timeline-circle {
