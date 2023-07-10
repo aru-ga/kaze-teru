@@ -58,7 +58,6 @@
   align-items: center;
   justify-content: center;
   padding-top: 1em;
-  font-family: Jost;
 }
 
 .design {
@@ -68,9 +67,8 @@
 }
 
 .timeline {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+    grid-template-columns: 1fr 3px 1fr;
 }
 
 .timeline-content {
@@ -83,7 +81,6 @@
   margin-bottom: 20px;
   border-radius: 6px;
 }
-@media screen and (min-width: 768px) {
   .timeline {
     display: grid;
     grid-template-columns: 1fr 3px 1fr;
@@ -95,7 +92,7 @@
     height: 100%;
   }
   .main-middle {
-    opacity: 0;
+    opacity: 1;
   }
   .timeline-circle {
     position: absolute;
@@ -108,4 +105,3 @@
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
-}
