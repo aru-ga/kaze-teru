@@ -81,27 +81,23 @@
   margin-bottom: 20px;
   border-radius: 6px;
 }
-  .timeline {
-    display: grid;
-    grid-template-columns: 1fr 3px 1fr;
-  }
-  .timeline-middle {
-    position: relative;
-    background-color: #f1f1f1;
-    width: 3px;
-    height: 100%;
-  }
-  .main-middle {
-    opacity: 1;
-  }
-  .timeline-circle {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: #f1f1f1;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-  }
+.timeline-middle {
+  position: relative;
+  background-color: #f1f1f1;
+  width: 3px;
+  height: 100%;
+}
+.main-middle {
+  opacity: 1;
+}
+.timeline-circle {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #f1f1f1;
+ -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
