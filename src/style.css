@@ -35,7 +35,7 @@
   background-size: 800% 800%;
   -webkit-animation: gradientAnimation 5s ease infinite;
   -moz-animation: gradientAnimation 5s ease infinite;
-  animation: gradientAnimation 10s ease infinite;
+  animation: gradientAnimation 2s ease infinite;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding-bottom: 2em;
@@ -52,7 +52,6 @@
   text-shadow: 0 0 5px rgb(34 211 238), 0 0 15px rgb(34 211 238),0 0 25px rgb(34 211 238);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');
 .design-section {
   display: flex;
   flex-direction: column;
