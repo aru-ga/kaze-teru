@@ -72,13 +72,11 @@
 }
 
 .timeline-content {
-  padding: 20px;
   border-radius: 5px;
   color: white;
   padding: 1.75rem;
   transition: 0.4s ease;
-  margin: 1rem;
-  margin-bottom: 20px;
+  margin: 1rem ;
   border-radius: 6px;
 }
 .timeline-middle {
@@ -91,13 +89,10 @@
   opacity: 0;
 }
 .timeline-circle {
-  position: absolute;
-  top: 0;
-  left: 50%;
   width: 1em;
   height: 1em;
   border-radius: 50%;
   background-color: #f1f1f1;
- -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
+ -webkit-transform: translateX(-40%);
+  transform: translateX(-40%);
 }
