@@ -51,6 +51,9 @@ function shuffleArray(array) {
 
     return array;
 }
+  
+const navLeftSide = document.getElementById('left-side');
+const navRightSide = document.getElementById('right-side')
 
 window.addEventListener('scroll', () => {
     const navbar = document.getElementById('navbar');
@@ -61,24 +64,28 @@ window.addEventListener('scroll', () => {
   
     if (scrollTop > contentOffsetTop) {
       navbar.classList.add('sticky');
-      navbar.classList.add('bg-slate-900');
       navbar.classList.add('border-b-2');
       navbar.classList.add('border-cyan-200');
-      navbar.classList.add('mx-16');
       content.style.marginTop = `${navbarHeight}px`;
+      navbar.classList.add('bg-slate-900')
+      navLeftSide.classList.add('ml-10');
+      navRightSide.classList.add('mr-10');
     } else {
       navbar.classList.remove('sticky');
-      navbar.classList.remove('bg-slate-900');
       navbar.classList.remove('border-b-2');
       navbar.classList.remove('border-cyan-200');
-      navbar.classList.remove('mx-16');
+      navbar.classList.remove('bg-slate-900');
     }
   });
 
-const navmob = document.getElementById('nav-mobile')
-const navmobE = document.getElementById('navmob-extend')
-
-navmob.addEventListener('click', () => {
-    navmobE.classList.toggle('hidden');
-    // alert('clicked!1!1')
-})
+  const navmob = document.getElementById('nav-mobile');
+  const navmobE = document.getElementById('navmob-extend');
+  
+  navmob.addEventListener('click', () => {
+      navmobE.classList.toggle('hidden');
+      const isBackgroundSet = navbar.classList.contains('bg-slate-900');
+  
+      if (!isBackgroundSet) {
+          navbar.classList.add('bg-slate-900');
+      }
+  });
