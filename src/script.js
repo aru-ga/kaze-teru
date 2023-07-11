@@ -51,22 +51,22 @@ function shuffleArray(array) {
 
     return array;
 }
-  
+const navmob = document.getElementById('nav-mobile');
+const navmobE = document.getElementById('navmob-extend');
+const navbar = document.getElementById('navbar');
+const hero = document.getElementById('hero');
+const heroOffsetTop = hero.offsetTop;
+const navbarHeight = navbar.offsetHeight;
+const scrollTop = window.scrollY.offsetHeight || document.documentElement.scrollTop;
 const navLeftSide = document.getElementById('left-side');
 const navRightSide = document.getElementById('right-side')
 
 window.addEventListener('scroll', () => {
-    const navbar = document.getElementById('navbar');
-    const content = document.getElementById('hero');
-    const contentOffsetTop = content.offsetTop;
-    const navbarHeight = navbar.offsetHeight;
-    const scrollTop = window.scrollY.offsetHeight || document.documentElement.scrollTop;
-  
-    if (scrollTop > contentOffsetTop) {
+    if (scrollTop > heroOffsetTop) {
       navbar.classList.add('sticky');
       navbar.classList.add('border-b-2');
       navbar.classList.add('border-cyan-200');
-      content.style.marginTop = `${navbarHeight}px`;
+      hero.style.marginTop = `${navbarHeight}px`;
       navbar.classList.add('bg-slate-900')
       navLeftSide.classList.add('ml-10');
       navRightSide.classList.add('mr-10');
@@ -78,14 +78,11 @@ window.addEventListener('scroll', () => {
     }
   });
 
-  const navmob = document.getElementById('nav-mobile');
-  const navmobE = document.getElementById('navmob-extend');
-  
-  navmob.addEventListener('click', () => {
-      navmobE.classList.toggle('hidden');
-      const isBackgroundSet = navbar.classList.contains('bg-slate-900');
-  
-      if (!isBackgroundSet) {
+navmob.addEventListener('click', () => {
+    navmobE.classList.toggle('hidden');
+    const isBackgroundSet = navbar.classList.contains('bg-slate-900');
+
+    if (!isBackgroundSet) {
           navbar.classList.add('bg-slate-900');
-      }
-  });
+    }
+});
