@@ -980,6 +980,14 @@ video {
   height: 100vh;
 }
 
+.h-3{
+  height: 0.75rem;
+}
+
+.h-6{
+  height: 1.5rem;
+}
+
 .max-h-0{
   max-height: 0px;
 }
@@ -1042,6 +1050,10 @@ video {
 
 .w-full{
   width: 100%;
+}
+
+.w-6{
+  width: 1.5rem;
 }
 
 .max-w-2xl{
@@ -2151,6 +2163,11 @@ video {
   background-color: rgb(220 38 38 / var(--tw-bg-opacity));
 }
 
+.bg-sky-950{
+  --tw-bg-opacity: 1;
+  background-color: rgb(8 47 73 / var(--tw-bg-opacity));
+}
+
 .bg-slate-800{
   --tw-bg-opacity: 1;
   background-color: rgb(30 41 59 / var(--tw-bg-opacity));
@@ -2173,11 +2190,6 @@ video {
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-sky-950{
-  --tw-bg-opacity: 1;
-  background-color: rgb(8 47 73 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-t{
@@ -2945,6 +2957,8 @@ video {
   content: var(--tw-content);
 }
 
+@heroicons/react/20;
+
 .ngetik {
   border-right: 2px solid #f1f1f1;
   animation: blinkTextCursor 800ms steps(44) infinite normal;
@@ -3050,6 +3064,10 @@ video {
   grid-template-columns: 1fr .3em 1fr;
 }
 
+.bg-hero{
+  background-color: #000000;
+}
+
 @media (min-width: 640px){
   .sm\:container{
     width: 100%;
@@ -3127,6 +3145,18 @@ video {
     display: flex;
   }
 
+  .sm\:hidden{
+    display: none;
+  }
+
+  .sm\:h-10{
+    height: 2.5rem;
+  }
+
+  .sm\:w-10{
+    width: 2.5rem;
+  }
+
   .sm\:text-3xl{
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -3147,6 +3177,10 @@ video {
     display: flex;
   }
 
+  .md\:hidden{
+    display: none;
+  }
+
   .md\:text-5xl{
     font-size: 3rem;
     line-height: 1;
@@ -3163,4 +3197,9 @@ video {
   .xl\:flex{
     display: flex;
   }
+
+  .xl\:hidden{
+    display: none;
+  }
 }
+

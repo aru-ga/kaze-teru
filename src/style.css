@@ -2,6 +2,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@heroicons/react/20;
 
 .ngetik {
   border-right: 2px solid #f1f1f1;
@@ -98,3 +99,7 @@
   display: grid;
     grid-template-columns: 1fr .3em 1fr;
 }
+.bg-hero{
+  background-color: #000000;
+}
+
