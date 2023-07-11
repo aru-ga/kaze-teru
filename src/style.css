@@ -22,13 +22,16 @@
 
 #navbar {
   position: fixed;
-  transition: 200ms ease-in-out;
+  transition: 900ms ease-in-out;
 }
 
 #navbar.sticky {
   width: 100%;
   border-radius: 0%;
+}
 
+#mobairu{
+  transition: 200ms ease;
 }
 .gradient-heading {
   background: linear-gradient(45deg, #ff7f00, #ff3e00, #ff007f, #911691, #8000ff, #00ffff, #00ff00, #ffff00);

@@ -53,15 +53,17 @@ function shuffleArray(array) {
 }
 const navmob = document.getElementById('nav-mobile');
 const navmobE = document.getElementById('navmob-extend');
-const navbar = document.getElementById('navbar');
-const hero = document.getElementById('hero');
-const heroOffsetTop = hero.offsetTop;
-const navbarHeight = navbar.offsetHeight;
-const scrollTop = window.scrollY.offsetHeight || document.documentElement.scrollTop;
+
 const navLeftSide = document.getElementById('left-side');
 const navRightSide = document.getElementById('right-side')
 
 window.addEventListener('scroll', () => {
+    const navbar = document.getElementById('navbar');
+    const hero = document.getElementById('hero');
+    const heroOffsetTop = hero.offsetTop;
+    const navbarHeight = navbar.offsetHeight;
+    const scrollTop = window.scrollY.offsetHeight || document.documentElement.scrollTop;
+  
     if (scrollTop > heroOffsetTop) {
       navbar.classList.add('sticky');
       navbar.classList.add('border-b-2');
@@ -78,11 +80,11 @@ window.addEventListener('scroll', () => {
     }
   });
 
-navmob.addEventListener('click', () => {
-    navmobE.classList.toggle('hidden');
-    const isBackgroundSet = navbar.classList.contains('bg-slate-900');
 
-    if (!isBackgroundSet) {
+  navmob.addEventListener('click', () => {
+      const isBackgroundSet = navbar.classList.contains('bg-slate-900');
+      navmobE.classList.toggle('hidden');
+      if (!isBackgroundSet) {
           navbar.classList.add('bg-slate-900');
-    }
-});
+      }
+  });
