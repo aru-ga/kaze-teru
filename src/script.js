@@ -74,3 +74,11 @@ window.addEventListener('scroll', () => {
       navbar.classList.remove('mx-16');
     }
   });
+
+const navmob = document.getElementById('nav-mobile')
+const navmobE = document.getElementById('navmob-extend')
+
+navmob.addEventListener('click', () => {
+    navmobE.classList.toggle('hidden');
+    // alert('clicked!1!1')
+})

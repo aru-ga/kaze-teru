@@ -7,7 +7,6 @@
       <link rel="stylesheet" href="style.css">
       <link rel="stylesheet" href="css/main.css">
       <link rel="stylesheet" href="../dist/output.css">
-      <style>@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');</style>
   </head>
 
   <body class="bg-slate-950">
@@ -23,16 +22,22 @@
           <a href="#cert" class="border-transparent border-b-2 hover:text-cyan-500 hover:border-b-2 hover:border-cyan-400 xl:flex md:flex sm:flex">Cert</a>
         </div>
         <!-- mobairu -->
-        <div class="nav-mobile">
-          <svg class="w-11 h-11 xl:hidden md:hidden "  data-darkreader-inline-stroke="" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <div class="flex flex-col sm:h-screen justify-center items-center sm:hidden xl:hidden md:hidden" >
+          <svg id="nav-mobile" class="w-11 h-11 xl:hidden md:hidden cursor-pointer"  data-darkreader-inline-stroke="" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" stroke-linecap="round" stroke-linejoin="round"></path>
           </svg>
+          <div id="navmob-extend" class="navmob-extend hidden">
+              <a href="#" class="border-b-2 text-cyan-400 font-semibold hover:text-cyan-500 border-cyan-400">Home</a>
+              <a href="#about" class="border-transparent border-b-2 hover:text-cyan-500 hover:border-b-2 hover:border-cyan-400">About</a>
+              <a href="#timeline" class="border-transparent border-b-2 hover:text-cyan-500 hover:border-b-2 hover:border-cyan-400">Timeline</a>
+              <a href="#cert" class="border-transparent border-b-2 hover:text-cyan-500 hover:border-b-2 hover:border-cyan-400">Cert</a>
+          </div>
         </div>
                 
       </nav>
     </header>
     <main class="mx-3">
-        <section id="hero" class="bg-hero">          
+        <section id="hero">          
             <div class="flex flex-col justify-center mx-10 h-screen">
                 <h1 class="text-3xl text-slate-100 glowing-text md:text-5xl sm:text-5xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, ullam!&nbsp<span class="ngetik font-mono"></span>
                 </h1>
