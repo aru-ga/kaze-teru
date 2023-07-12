@@ -84,9 +84,9 @@ window.addEventListener('scroll', () => {
 
 
   navmob.addEventListener('click', () => {
-      const isBackgroundSet = navbar.classList.contains('bg-slate-900');
-      navmobE.classList.toggle('hidden');
-      if (!isBackgroundSet) {
-          navbar.classList.add('bg-slate-900');
-      }
+    const isBackgroundSet = navbar.classList.contains('bg-slate-900');
+    navmobE.classList.toggle('hidden');
+    if (!isBackgroundSet) {
+      navbar.classList.add('bg-slate-900');
+    }
   });
