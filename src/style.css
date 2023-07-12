@@ -22,7 +22,7 @@
 
 #navbar {
   position: fixed;
-  transition: 900ms ease-in-out;
+  transition: 350ms ease-in-out;
 }
 
 #navbar.sticky {

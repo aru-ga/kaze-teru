@@ -28,7 +28,7 @@ function typingEffect() {
             removing = false; // No more removing characters
         }
 
-    }, 50); // Typing speed, 50 ms
+    }, 40); // Typing speed, 50 ms
 
 }
 typingEffect();
@@ -72,11 +72,13 @@ window.addEventListener('scroll', () => {
       navbar.classList.add('bg-slate-900')
       navLeftSide.classList.add('ml-10');
       navRightSide.classList.add('mr-10');
+      navbar.classList.remove('mt-3')
     } else {
       navbar.classList.remove('sticky');
       navbar.classList.remove('border-b-2');
       navbar.classList.remove('border-cyan-200');
       navbar.classList.remove('bg-slate-900');
+      navbar.classList.add('mt-3');
     }
   });
 
