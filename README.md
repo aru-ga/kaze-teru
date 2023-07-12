@@ -1,2 +1,2 @@
 # kaze-teru
-Another vitae page but using tailwind frameworks.
+Another vitae page but with tailwindcss
