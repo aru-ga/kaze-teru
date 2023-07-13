@@ -1085,6 +1085,10 @@ video {
   height: 0.5rem;
 }
 
+.h-20{
+  height: 5rem;
+}
+
 .h-28{
   height: 7rem;
 }
@@ -1140,6 +1144,14 @@ video {
 
 .h-screen{
   height: 100vh;
+}
+
+.h-1\/4{
+  height: 25%;
+}
+
+.h-40{
+  height: 10rem;
 }
 
 .max-h-0{
@@ -1238,6 +1250,18 @@ video {
 .w-min{
   width: -moz-min-content;
   width: min-content;
+}
+
+.w-24{
+  width: 6rem;
+}
+
+.w-2\/4{
+  width: 50%;
+}
+
+.w-3\/4{
+  width: 75%;
 }
 
 .max-w-2xl{
@@ -1788,6 +1812,14 @@ video {
   gap: 0.75rem;
 }
 
+.gap-1{
+  gap: 0.25rem;
+}
+
+.gap-5{
+  gap: 1.25rem;
+}
+
 .space-x-2 > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -2250,6 +2282,10 @@ video {
   border-top-width: 1px;
 }
 
+.border-t-2{
+  border-top-width: 2px;
+}
+
 .border-solid{
   border-style: solid;
 }
@@ -2336,6 +2372,21 @@ video {
 .border-l-indigo-700{
   --tw-border-opacity: 1;
   border-left-color: rgb(67 56 202 / var(--tw-border-opacity));
+}
+
+.border-t-white{
+  --tw-border-opacity: 1;
+  border-top-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.border-t-cyan-400{
+  --tw-border-opacity: 1;
+  border-top-color: rgb(34 211 238 / var(--tw-border-opacity));
+}
+
+.border-b-cyan-400{
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(34 211 238 / var(--tw-border-opacity));
 }
 
 .border-opacity-0{
@@ -2594,6 +2645,10 @@ video {
   padding: 2rem;
 }
 
+.p-20{
+  padding: 5rem;
+}
+
 .px-2{
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -2745,6 +2800,11 @@ video {
   line-height: 1rem;
 }
 
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .font-bold{
   font-weight: 700;
 }
@@ -2759,6 +2819,10 @@ video {
 
 .font-thin{
   font-weight: 100;
+}
+
+.font-normal{
+  font-weight: 400;
 }
 
 .uppercase{
@@ -3326,35 +3390,6 @@ video {
   text-shadow: 0 0 5px rgb(34 211 238), 0 0 15px rgb(34 211 238),0 0 25px rgb(34 211 238);
 }
 
-/* .design-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-top: 1em;
-}
-
-.design {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-
-
-.timeline-content {
-  border-radius: 5px;
-  color: white;
-  padding: 1.75rem;
-  transition: 0.4s ease;
-  margin: 1rem ;
-  border-radius: 6px;
-}
-
-.main-middle {
-  opacity: 0;
-}*/
-
 .timeline-circle {
   width: 1em;
   height: 1em;
@@ -3374,15 +3409,6 @@ video {
   display: grid;
   grid-template-columns: 1fr .3em 1fr;
 }
-
-/*  
-.bg-hero{
-  background-image: url("../src/img/topography.svg");
-  background-position: center;
-  background-repeat: repeat;
-  background-size: cover;
-  color: #00ff00;
-} */
 
 @media (min-width: 640px){
   .sm\:container{
@@ -3502,6 +3528,10 @@ video {
     gap: 0.75rem;
   }
 
+  .sm\:overflow-hidden{
+    overflow: hidden;
+  }
+
   .sm\:text-3xl{
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -3547,12 +3577,61 @@ video {
 }
 
 @media (min-width: 1280px){
+  .xl\:-mt-3{
+    margin-top: -0.75rem;
+  }
+
+  .xl\:ml-3{
+    margin-left: 0.75rem;
+  }
+
   .xl\:flex{
     display: flex;
   }
 
   .xl\:hidden{
     display: none;
+  }
+
+  .xl\:h-40{
+    height: 10rem;
+  }
+
+  .xl\:h-72{
+    height: 18rem;
+  }
+
+  .xl\:w-56{
+    width: 14rem;
+  }
+
+  .xl\:flex-col{
+    flex-direction: column;
+  }
+
+  .xl\:gap-10{
+    gap: 2.5rem;
+  }
+
+  .xl\:overflow-hidden{
+    overflow: hidden;
+  }
+
+  .xl\:p-20{
+    padding: 5rem;
+  }
+
+  .xl\:p-3{
+    padding: 0.75rem;
+  }
+
+  .xl\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .xl\:font-normal{
+    font-weight: 400;
   }
 }
 
