@@ -3,7 +3,7 @@
   <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Document</title>
+      <title>Kazeteru</title>
       <link rel="stylesheet" href="style.css">
       <link rel="stylesheet" href="css/main.css">
       <link rel="stylesheet" href="../dist/output.css">
@@ -20,6 +20,7 @@
           <a href="#about" class="border-transparent border-b-2 hover:text-cyan-500 hover:border-b-2 hover:border-cyan-400 xl:flex md:flex sm:flex">About</a>
           <a href="#timeline" class="border-transparent border-b-2 hover:text-cyan-500 hover:border-b-2 hover:border-cyan-400 xl:flex md:flex sm:flex">Timeline</a>
           <a href="#cert" class="border-transparent border-b-2 hover:text-cyan-500 hover:border-b-2 hover:border-cyan-400 xl:flex md:flex sm:flex">Cert</a>
+          <a href="#footer" class="border-transparent border-b-2 hover:text-cyan-500 hover:border-b-2 hover:border-cyan-400 xl:flex md:flex sm:flex">Footer</a>
         </div>
         <div id="right-side" class="flex items-center font-size">
          <img src="https://avatars.githubusercontent.com/u/82811745?v=4" alt="" class="h-9 rounded-full inline">
@@ -59,7 +60,7 @@
 
         <section id="timeline" class="pt-16">
           <div class="timeline-text flex flex-col items-center text-center">
-            <h1 class="border-b-2 border-sky-400 mb-10">Timeline</h1>
+            <h1 class="border-b-2 border-cyan-400 mb-10">Timeline</h1>
           </div>
           <div class="timeline-cont flex justify-center">
             <div class="nodeline flex justify-around">
@@ -119,42 +120,84 @@
           <div class="title flex justify-center items-center my-10">
             <a href="cert" class=" text-center  border-b-2 border-b-cyan-400">Cert n Licenses</a>
           </div>
-          <div class="card-cont mx-auto w-3/4 gap-5 flex-wrap overflow-visible xl:min-w-max xl:overflow-hidden flex xl:flex-row items-center xl:gap-10 justify-center  md:flex-row md:gap-3 hover:overflow-visible">
+          <div class="card-cont mx-auto w-3/4 gap-5 flex-wrap xl:overflow-visible xl:min-w-max flex xl:flex-row items-center xl:gap-10 justify-center  md:flex-row md:gap-3 hover:overflow-visible">
 
-            <div class="card w-32 xl:w-56 rounded-lg xl:h-72 bg-slate-800 flex flex-col justify-between hover:scale-110 duration-200 mb-5 drop-shadow-[0_10px_10px_rgba(255,255,255,0.1)] hover:drop-shadow-[0_25px_25px_rgba(255,255,255,0.2)]">
+            <div class="card w-32 xl:w-56 rounded-lg xl:h-72 bg-slate-900 x flex flex-col justify-between duration-200 mb-5 hover:drop-shadow-[0_25px_25px_rgba(255,255,255,0.1)]">
               <img src="img/sql.jpg" class="w-56 rounded-t-lg" alt="">
               <div class="card-text p-2 xl:ml-3 xl:-mt-3">
-                <p class=" text-gray-200 font-bold text-sm xl:text-base">Basic SQL</p>
-                <p class=" text-gray-400 text-sm xl:text-base">Dicoding</p>
+                <p class=" text-gray-200 font-bold text-sm xl:text-lg">Basic SQL</p>
+                <p class=" text-gray-400 text-sm xl:text-sm">Dicoding</p>
               </div>
-              <a href="https://www.dicoding.com/certificates/L4PQG5OMQZO1" target="_blank" class="rounded-b-lg text-center h-min p-2 text-sm xl:text-base bg-slate-900 xl:p-3 hover:bg-slate-800 transition duration-200">show credential</a>
+              <a href="https://www.dicoding.com/certificates/L4PQG5OMQZO1" target="_blank" class="group rounded-b-lg xl:-mt-3 p-2 xl:p-2 text-xs xl:text-base transition duration-200 text-cyan-400 hover:text-cyan-300 active:text-cyan-600">show credential
+                 <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="inline-block w-4 h-4 xl:w-6 xl:h-6 text-cyan-400 group-hover:ml-1 xl:group-hover:ml-3 duration-200 ">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                 </svg>
+              </a>
             </div>
 
-            <div class="card w-32 xl:w-56 rounded-lg xl:h-72 bg-slate-800 flex flex-col justify-between hover:scale-110 duration-200 mb-5 drop-shadow-[0_10px_10px_rgba(255,255,255,0.1)] hover:drop-shadow-[0_25px_25px_rgba(255,255,255,0.2)]">
+            <div class="card w-32 xl:w-56 rounded-lg xl:h-72 bg-slate-900 x flex flex-col justify-between duration-200 mb-5 hover:drop-shadow-[0_25px_25px_rgba(255,255,255,0.1)]">
               <img src="img/sql.jpg" class="w-56 rounded-t-lg" alt="">
               <div class="card-text p-2 xl:ml-3 xl:-mt-3">
-                <p class=" text-gray-200 font-bold text-sm xl:text-base">Basic SQL</p>
-                <p class=" text-gray-400 text-sm xl:text-base">Dicoding</p>
+                <p class=" text-gray-200 font-bold text-sm xl:text-lg">Basic SQL</p>
+                <p class=" text-gray-400 text-sm xl:text-sm">Dicoding</p>
               </div>
-              <a href="https://www.dicoding.com/certificates/L4PQG5OMQZO1" target="_blank" class="rounded-b-lg text-center h-min p-2 text-sm xl:text-base bg-slate-900 xl:p-3 hover:bg-slate-800 transition duration-200">show credential</a>
+              <a href="https://www.dicoding.com/certificates/L4PQG5OMQZO1" target="_blank" class="group rounded-b-lg xl:-mt-3 p-2 xl:p-2 text-xs xl:text-base transition duration-200 text-cyan-400 hover:text-cyan-300 active:text-cyan-600">show credential
+                 <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="inline-block w-4 h-4 xl:w-6 xl:h-6 text-cyan-400 group-hover:ml-1 xl:group-hover:ml-3 duration-200 ">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                 </svg>
+              </a>
             </div>
 
-            <div class="card w-32 xl:w-56 rounded-lg xl:h-72 bg-slate-800 flex flex-col justify-between hover:scale-110 duration-200 mb-5 drop-shadow-[0_10px_10px_rgba(255,255,255,0.1)] hover:drop-shadow-[0_25px_25px_rgba(255,255,255,0.2)]">
+            <div class="card w-32 xl:w-56 rounded-lg xl:h-72 bg-slate-900 x flex flex-col justify-between duration-200 mb-5 hover:drop-shadow-[0_25px_25px_rgba(255,255,255,0.1)]">
               <img src="img/sql.jpg" class="w-56 rounded-t-lg" alt="">
               <div class="card-text p-2 xl:ml-3 xl:-mt-3">
-                <p class=" text-gray-200 font-bold text-sm xl:text-base">Basic SQL</p>
-                <p class=" text-gray-400 text-sm xl:text-base">Dicoding</p>
+                <p class=" text-gray-200 font-bold text-sm xl:text-lg">Basic SQL</p>
+                <p class=" text-gray-400 text-sm xl:text-sm">Dicoding</p>
               </div>
-              <a href="https://www.dicoding.com/certificates/L4PQG5OMQZO1" target="_blank" class="rounded-b-lg text-center h-min p-2 text-sm xl:text-base bg-slate-900 xl:p-3 hover:bg-slate-800 transition duration-200">show credential</a>
+              <a href="https://www.dicoding.com/certificates/L4PQG5OMQZO1" target="_blank" class="group rounded-b-lg xl:-mt-3 p-2 xl:p-2 text-xs xl:text-base transition duration-200 text-cyan-400 hover:text-cyan-300 active:text-cyan-600">show credential
+                 <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="inline-block w-4 h-4 xl:w-6 xl:h-6 text-cyan-400 group-hover:ml-1 xl:group-hover:ml-3 duration-200 ">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                 </svg>
+              </a>
             </div>
 
-            <div class="card w-32 xl:w-56 rounded-lg xl:h-72 bg-slate-800 flex flex-col justify-between hover:scale-110 duration-200 mb-5 drop-shadow-[0_10px_10px_rgba(255,255,255,0.1)] hover:drop-shadow-[0_25px_25px_rgba(255,255,255,0.2)]">
+            <div class="card w-32 xl:w-56 rounded-lg xl:h-72 bg-slate-900 x flex flex-col justify-between duration-200 mb-5 hover:drop-shadow-[0_25px_25px_rgba(255,255,255,0.1)]">
               <img src="img/sql.jpg" class="w-56 rounded-t-lg" alt="">
               <div class="card-text p-2 xl:ml-3 xl:-mt-3">
-                <p class=" text-gray-200 font-bold text-sm xl:text-base">Basic SQL</p>
-                <p class=" text-gray-400 text-sm xl:text-base">Dicoding</p>
+                <p class=" text-gray-200 font-bold text-sm xl:text-lg">Basic SQL</p>
+                <p class=" text-gray-400 text-sm xl:text-sm">Dicoding</p>
               </div>
-              <a href="https://www.dicoding.com/certificates/L4PQG5OMQZO1" target="_blank" class="rounded-b-lg text-center h-min p-2 text-sm xl:text-base bg-slate-900 xl:p-3 hover:bg-slate-800 transition duration-200">show credential</a>
+              <a href="https://www.dicoding.com/certificates/L4PQG5OMQZO1" target="_blank" class="group rounded-b-lg xl:-mt-3 p-2 xl:p-2 text-xs xl:text-base transition duration-200 text-cyan-400 hover:text-cyan-300 active:text-cyan-600">show credential
+                 <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="inline-block w-4 h-4 xl:w-6 xl:h-6 text-cyan-400 group-hover:ml-1 xl:group-hover:ml-3 duration-200 ">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                 </svg>
+              </a>
+            </div>
+
+            <div class="card w-32 xl:w-56 rounded-lg xl:h-72 bg-slate-900 x flex flex-col justify-between duration-200 mb-5 hover:drop-shadow-[0_25px_25px_rgba(255,255,255,0.1)]">
+              <img src="img/sql.jpg" class="w-56 rounded-t-lg" alt="">
+              <div class="card-text p-2 xl:ml-3 xl:-mt-3">
+                <p class=" text-gray-200 font-bold text-sm xl:text-lg">Basic SQL</p>
+                <p class=" text-gray-400 text-sm xl:text-sm">Dicoding</p>
+              </div>
+              <a href="https://www.dicoding.com/certificates/L4PQG5OMQZO1" target="_blank" class="group rounded-b-lg xl:-mt-3 p-2 xl:p-2 text-xs xl:text-base transition duration-200 text-cyan-400 hover:text-cyan-300 active:text-cyan-600">show credential
+                 <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="inline-block w-4 h-4 xl:w-6 xl:h-6 text-cyan-400 group-hover:ml-1 xl:group-hover:ml-3 duration-200 ">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                 </svg>
+              </a>
+            </div>
+
+            <div class="card w-32 xl:w-56 rounded-lg xl:h-72 bg-slate-900 x flex flex-col justify-between duration-200 mb-5 hover:drop-shadow-[0_25px_25px_rgba(255,255,255,0.1)]">
+              <img src="img/sql.jpg" class="w-56 rounded-t-lg" alt="">
+              <div class="card-text p-2 xl:ml-3 xl:-mt-3">
+                <p class=" text-gray-200 font-bold text-sm xl:text-lg">Basic SQL</p>
+                <p class=" text-gray-400 text-sm xl:text-sm">Dicoding</p>
+              </div>
+              <a href="https://www.dicoding.com/certificates/L4PQG5OMQZO1" target="_blank" class="group rounded-b-lg xl:-mt-3 p-2 xl:p-2 text-xs xl:text-base transition duration-200 text-cyan-400 hover:text-cyan-300 active:text-cyan-600">show credential
+                 <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="inline-block w-4 h-4 xl:w-6 xl:h-6 text-cyan-400 group-hover:ml-1 xl:group-hover:ml-3 duration-200 ">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                 </svg>
+              </a>
             </div>
 
           </div>
