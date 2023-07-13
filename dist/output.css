@@ -1264,6 +1264,11 @@ video {
   width: 75%;
 }
 
+.min-w-max{
+  min-width: -moz-max-content;
+  min-width: max-content;
+}
+
 .max-w-2xl{
   max-width: 42rem;
 }
@@ -3603,6 +3608,19 @@ video {
 
   .xl\:w-56{
     width: 14rem;
+  }
+
+  .xl\:w-3\/4{
+    width: 75%;
+  }
+
+  .xl\:min-w-max{
+    min-width: -moz-max-content;
+    min-width: max-content;
+  }
+
+  .xl\:flex-row{
+    flex-direction: row;
   }
 
   .xl\:flex-col{
