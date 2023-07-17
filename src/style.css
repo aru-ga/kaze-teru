@@ -73,4 +73,6 @@
     grid-template-columns: 1fr .3em 1fr;
  }
 
- 
+.custom-animation {
+  animation-duration: 10s;
+}
