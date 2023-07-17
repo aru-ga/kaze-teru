@@ -83,24 +83,24 @@ window.addEventListener('scroll', () => {
   });
 
 
-  navmob.addEventListener('click', () => {
-    const isBackgroundSet = navbar.classList.contains('bg-slate-900');
-    navmobE.classList.toggle('hidden');
-    if (!isBackgroundSet) {
-      navbar.classList.add('bg-slate-900');
-    }
-  });
-
-  var myRadios = document.getElementsByName('tabs2');
-  var setCheck;
-  var x = 0;
-  for(x = 0; x < myRadios.length; x++){
-      myRadios[x].onclick = function(){
-          if(setCheck != this){
-               setCheck = this;
-          }else{
-              this.checked = false;
-              setCheck = null;
-      }
-      };
+navmob.addEventListener('click', () => {
+  const isBackgroundSet = navbar.classList.contains('bg-slate-900');
+  navmobE.classList.toggle('hidden');
+  if (!isBackgroundSet) {
+    navbar.classList.add('bg-slate-900');
   }
+});
+
+var myRadios = document.getElementsByName('tabs2');
+var setCheck;
+var x = 0;
+for(x = 0; x < myRadios.length; x++){
+  myRadios[x].onclick = function(){
+    if(setCheck != this){
+      setCheck = this;
+    }else{
+    this.checked = false;
+    setCheck = null;
+  }
+ };
+}
