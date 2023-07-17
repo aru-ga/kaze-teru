@@ -97,3 +97,15 @@ window.addEventListener('load', function () {
   preloader.classList.add('hidden');
   mainContent.classList.remove('hidden');
 });
+
+// main.js
+const body = document.querySelector("body");
+const themeToggle = document.querySelector("#theme-toggle");
+const themeText = document.querySelector(".theme-text");
+let darkTheme = false;
+
+themeToggle.addEventListener("click", () => {
+  body.classList.toggle("dark");
+  darkTheme = !darkTheme;
+  themeText.textContent = darkTheme ? "DARK" : "LIGHT";
+});
