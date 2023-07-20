@@ -69,16 +69,16 @@ window.addEventListener('scroll', () => {
       navbar.classList.add('border-b-2');
       navbar.classList.add('border-cyan-200');
       // hero.style.marginTop = `${navbarHeight}px`;
-      navbar.classList.add('bg-slate-900')
-      navLeftSide.classList.add('pl-10');
-      navRightSide.classList.add('pr-10');
+      navbar.classList.add('bg-slate-200')
+      navbar.classList.add('dark:bg-slate-900')
       navbar.classList.add('py-4');
       navbar.classList.add('px-10');
     } else {
       navbar.classList.remove('sticky');
       navbar.classList.remove('border-b-2');
       navbar.classList.remove('border-cyan-200');
-      navbar.classList.remove('bg-slate-900');
+      navbar.classList.remove('bg-slate-200');
+      navbar.classList.remove('dark:bg-slate-900');
       navbar.classList.remove('py-4');
       navbar.classList.remove('px-10');
     }
