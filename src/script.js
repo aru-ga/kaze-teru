@@ -93,6 +93,8 @@ navmob.addEventListener('click', () => {
   }
 });
 // main.js
+const sun = document.getElementById("sun");
+const moon = document.getElementById("moon");
 const body = document.querySelector("body");
 const themeToggle = document.querySelector("#theme-toggle");
 let darkTheme = false;
@@ -100,5 +102,6 @@ let darkTheme = false;
 themeToggle.addEventListener("click", () => {
   body.classList.toggle("dark");
   darkTheme = !darkTheme;
-  themeText.textContent = darkTheme ? "DARK" : "LIGHT";
+  sun.classList.toggle('hidden');
+  moon.classList.toggle('hidden');
 });

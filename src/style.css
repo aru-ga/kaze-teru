@@ -7,7 +7,6 @@
 .ngetik {
   border-right: 2px solid #f1f1f1;
   animation: blinkTextCursor 800ms steps(44) infinite normal;
-  color: #f5f5f5;
   font-family: 'Fira Code', monospace;
 }
 
