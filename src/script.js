@@ -102,3 +102,21 @@ themeToggle.addEventListener("click", () => {
   sun.classList.toggle('hidden');
   moon.classList.toggle('hidden');
 });
+
+const backToTopBtn = document.getElementById('backToTopBtn');
+
+  // Show the button when the user scrolls down 200px from the top
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 200) {
+      backToTopBtn.classList.remove('hidden');
+    } else {
+      backToTopBtn.classList.add('hidden');
+    }
+  });
+
+  // Smooth scroll back to the top when the button is clicked
+  backToTopBtn.addEventListener('click', function(e) {
+    e.preventDefault();
+    const topElement = document.getElementById('top');
+    topElement.scrollIntoView({ behavior: 'smooth' });
+  });

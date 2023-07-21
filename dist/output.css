@@ -625,12 +625,20 @@ video {
   inset: -0.25rem;
 }
 
+.bottom-5{
+  bottom: 1.25rem;
+}
+
 .end-1{
   inset-inline-end: 0.25rem;
 }
 
 .left-0{
   left: 0px;
+}
+
+.right-5{
+  right: 1.25rem;
 }
 
 .top-0{
@@ -3963,6 +3971,11 @@ video {
 
 .hover\:border-b-2:hover{
   border-bottom-width: 2px;
+}
+
+.hover\:bg-blue-600:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
 }
 
 .hover\:font-bold:hover{
