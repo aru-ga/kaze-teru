@@ -637,6 +637,10 @@ video {
   left: 0px;
 }
 
+.left-5{
+  left: 1.25rem;
+}
+
 .right-5{
   right: 1.25rem;
 }
@@ -647,6 +651,10 @@ video {
 
 .top-1{
   top: 0.25rem;
+}
+
+.top-5{
+  top: 1.25rem;
 }
 
 .isolate{
@@ -860,6 +868,10 @@ video {
   margin-right: -1.25rem;
 }
 
+.-mr-96{
+  margin-right: -24rem;
+}
+
 .-mt-1{
   margin-top: -0.25rem;
 }
@@ -1046,6 +1058,58 @@ video {
 
 .mt-8{
   margin-top: 2rem;
+}
+
+.mr-96{
+  margin-right: 24rem;
+}
+
+.-ml-44{
+  margin-left: -11rem;
+}
+
+.ml-44{
+  margin-left: 11rem;
+}
+
+.ml-96{
+  margin-left: 24rem;
+}
+
+.mt-14{
+  margin-top: 3.5rem;
+}
+
+.mt-56{
+  margin-top: 14rem;
+}
+
+.mt-80{
+  margin-top: 20rem;
+}
+
+.mt-96{
+  margin-top: 24rem;
+}
+
+.ml-9{
+  margin-left: 2.25rem;
+}
+
+.ml-16{
+  margin-left: 4rem;
+}
+
+.ml-32{
+  margin-left: 8rem;
+}
+
+.ml-60{
+  margin-left: 15rem;
+}
+
+.mr-56{
+  margin-right: 14rem;
 }
 
 .box-border{
@@ -3971,11 +4035,6 @@ video {
 
 .hover\:border-b-2:hover{
   border-bottom-width: 2px;
-}
-
-.hover\:bg-blue-600:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
 }
 
 .hover\:font-bold:hover{
