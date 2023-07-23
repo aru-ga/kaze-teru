@@ -717,6 +717,10 @@ video {
   margin: 1.25rem;
 }
 
+.-m-5{
+  margin: -1.25rem;
+}
+
 .mx-1{
   margin-left: 0.25rem;
   margin-right: 0.25rem;
@@ -792,6 +796,11 @@ video {
   margin-bottom: auto;
 }
 
+.-mx-5{
+  margin-left: -1.25rem;
+  margin-right: -1.25rem;
+}
+
 .-mb-1{
   margin-bottom: -0.25rem;
 }
@@ -846,6 +855,10 @@ video {
 
 .-ml-4{
   margin-left: -1rem;
+}
+
+.-ml-44{
+  margin-left: -11rem;
 }
 
 .-ml-5{
@@ -940,6 +953,10 @@ video {
   margin-left: 3rem;
 }
 
+.ml-16{
+  margin-left: 4rem;
+}
+
 .ml-2{
   margin-left: 0.5rem;
 }
@@ -952,12 +969,32 @@ video {
   margin-left: 0.75rem;
 }
 
+.ml-32{
+  margin-left: 8rem;
+}
+
 .ml-4{
   margin-left: 1rem;
 }
 
+.ml-44{
+  margin-left: 11rem;
+}
+
 .ml-5{
   margin-left: 1.25rem;
+}
+
+.ml-60{
+  margin-left: 15rem;
+}
+
+.ml-9{
+  margin-left: 2.25rem;
+}
+
+.ml-96{
+  margin-left: 24rem;
 }
 
 .ml-auto{
@@ -1000,6 +1037,14 @@ video {
   margin-right: 1.25rem;
 }
 
+.mr-56{
+  margin-right: 14rem;
+}
+
+.mr-96{
+  margin-right: 24rem;
+}
+
 .mt-0{
   margin-top: 0px;
 }
@@ -1014,6 +1059,10 @@ video {
 
 .mt-12{
   margin-top: 3rem;
+}
+
+.mt-14{
+  margin-top: 3.5rem;
 }
 
 .mt-16{
@@ -1048,6 +1097,10 @@ video {
   margin-top: 13rem;
 }
 
+.mt-56{
+  margin-top: 14rem;
+}
+
 .mt-6{
   margin-top: 1.5rem;
 }
@@ -1060,30 +1113,6 @@ video {
   margin-top: 2rem;
 }
 
-.mr-96{
-  margin-right: 24rem;
-}
-
-.-ml-44{
-  margin-left: -11rem;
-}
-
-.ml-44{
-  margin-left: 11rem;
-}
-
-.ml-96{
-  margin-left: 24rem;
-}
-
-.mt-14{
-  margin-top: 3.5rem;
-}
-
-.mt-56{
-  margin-top: 14rem;
-}
-
 .mt-80{
   margin-top: 20rem;
 }
@@ -1092,24 +1121,28 @@ video {
   margin-top: 24rem;
 }
 
-.ml-9{
-  margin-left: 2.25rem;
+.-ml-14{
+  margin-left: -3.5rem;
 }
 
-.ml-16{
-  margin-left: 4rem;
+.-ml-16{
+  margin-left: -4rem;
 }
 
-.ml-32{
-  margin-left: 8rem;
+.-ml-96{
+  margin-left: -24rem;
 }
 
-.ml-60{
-  margin-left: 15rem;
+.-mr-16{
+  margin-right: -4rem;
 }
 
-.mr-56{
-  margin-right: 14rem;
+.mr-16{
+  margin-right: 4rem;
+}
+
+.mr-36{
+  margin-right: 9rem;
 }
 
 .box-border{
@@ -4170,9 +4203,9 @@ video {
 }
 
 @media (min-width: 1280px){
-  .xl\:mx-5{
-    margin-left: 1.25rem;
-    margin-right: 1.25rem;
+  .xl\:mx-3{
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
   }
 
   .xl\:mt-0{
