@@ -85,8 +85,6 @@ window.addEventListener('scroll', () => {
     }
   });
 
-  const closeNav = document.getElementById('close');
-
 navmob.addEventListener('click', () => {
   const isBackgroundSet = navbar.classList.contains('bg-slate-900');
   navmobE.classList.toggle('-mt-full');
