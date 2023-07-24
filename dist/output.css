@@ -4140,6 +4140,16 @@ video {
   }
 }
 
+.focus-within\:bg-red-500:focus-within{
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+}
+
+.focus-within\:text-red-500:focus-within{
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
 .hover\:overflow-visible:hover{
   overflow: visible;
 }
@@ -4167,12 +4177,27 @@ video {
   text-align: center;
 }
 
+.focus\:text-red-500:focus{
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
 .focus\:hover\:text-center:hover:focus{
   text-align: center;
 }
 
 .hover\:focus\:text-center:focus:hover{
   text-align: center;
+}
+
+.active\:bg-slate-900:active{
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+}
+
+.active\:bg-red-500:active{
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
 }
 
 .active\:text-cyan-600:active{

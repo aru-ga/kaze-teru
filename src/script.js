@@ -88,6 +88,8 @@ window.addEventListener('scroll', () => {
 navmob.addEventListener('click', () => {
   const isBackgroundSet = navbar.classList.contains('bg-slate-900');
   navmobE.classList.toggle('-mt-full');
+  navmobE.classList.toggle('duration-500')
+  navmob.classList.toggle('text-cyan-400')
 });
 // main.js
 const sun = document.getElementById("sun");
