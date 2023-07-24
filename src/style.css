@@ -70,3 +70,7 @@
   display: grid;
     grid-template-columns: 1fr .3em 1fr;
  }
+
+ .-mt-full{
+  margin-top: -100rem;
+ }

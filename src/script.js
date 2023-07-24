@@ -53,6 +53,7 @@ function shuffleArray(array) {
 }
 const navmob = document.getElementById('nav-mobile');
 const navmobE = document.getElementById('navmob-extend');
+const toggleNavmob = document.getElementById('toggle-navmob')
 
 const navLeftSide = document.getElementById('left-side');
 const navRightSide = document.getElementById('right-side')
@@ -84,14 +85,11 @@ window.addEventListener('scroll', () => {
     }
   });
 
+  const closeNav = document.getElementById('close');
 
 navmob.addEventListener('click', () => {
   const isBackgroundSet = navbar.classList.contains('bg-slate-900');
-  navmobE.classList.toggle('hidden');
-  navmobE.classList.remove('ml-60');
-  navmobE.classlist.add('mr-56')
-  
-  navmobE.classlist.add('duration-300')
+  navmobE.classList.toggle('-mt-full');
 });
 // main.js
 const sun = document.getElementById("sun");
