@@ -4152,6 +4152,10 @@ video {
   font-weight: 700;
 }
 
+.hover\:font-semibold:hover{
+  font-weight: 600;
+}
+
 .hover\:text-cyan-500:hover{
   --tw-text-opacity: 1;
   color: rgb(6 182 212 / var(--tw-text-opacity));
