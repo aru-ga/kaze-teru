@@ -10,3 +10,4 @@ module.exports = {
   darkMode: 'class',
   
 }
+  
