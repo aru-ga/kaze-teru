@@ -38,7 +38,6 @@ function shuffleArray(array) {
     array[currentIndex] = array[randomIndex];
     array[randomIndex] = temporaryValue;
   }
-
   return array;
 }
 const navmob = document.getElementById("nav-mobile");
@@ -84,7 +83,6 @@ navmob.addEventListener("click", () => {
   navmobE.classList.toggle("duration-500");
   navmob.classList.toggle("text-cyan-400");
 });
-
 
 themeToggle.addEventListener("click", () => {
   body.classList.toggle("dark");
